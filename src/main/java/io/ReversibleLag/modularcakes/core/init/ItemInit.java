@@ -15,4 +15,6 @@ public class ItemInit {
 
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_FOOD)));
 
+	public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_FOOD)));
+
 }
