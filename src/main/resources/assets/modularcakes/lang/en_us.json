@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
-{
-	"item.modularcakes.flour": "Flour"
-	"item.modularcakes.salt": "Salt"
-=======
 {
 	"item.modularcakes.flour": "Flour",
+	"item.modularcakes.salt": "Salt",
+	"item.modularcakes.butter": "Butter",
 	"itemGroup.modularcakestab": "Modular Cakes"
 
->>>>>>> Stashed changes
 }

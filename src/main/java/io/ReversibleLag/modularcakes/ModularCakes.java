@@ -32,6 +32,7 @@ public class ModularCakes
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "modularcakes";
     public static final ItemGroup MODULAR_CAKE_TAB = new ModularCakesTab("modularcakestab");
+    
     public ModularCakes() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);

@@ -1,7 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "modularcakes:items/flour"
+		"layer0": "modularcakes:items/butter"
 	}
 
 }
