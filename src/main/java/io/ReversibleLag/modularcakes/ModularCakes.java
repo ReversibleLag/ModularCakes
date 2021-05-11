@@ -2,6 +2,9 @@ package io.ReversibleLag.modularcakes;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,7 +31,8 @@ public class ModularCakes
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "modularcakes";
-    //test
+    public static final ItemGroup MODULAR_CAKE_TAB = new ModularCakesTab("modularcakestab");
+    
     public ModularCakes() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
@@ -93,5 +97,25 @@ public class ModularCakes
             // register a new block here
             LOGGER.info("HELLO from Register Block");
         }
+    }
+    
+    public static class ModularCakesTab extends ItemGroup {
+
+		public ModularCakesTab(String label) {
+			super(label);
+		}
+		
+		
+		@Override
+		public ItemStack makeIcon() {
+			return ItemInit.FLOUR.get().getDefaultInstance();
+		}
+    	
+    	@Override
+    	public void fillItemList(NonNullList<ItemStack> p_78018_1_) {
+    		// TODO Auto-generated method stub
+    		super.fillItemList(p_78018_1_);
+    	}
+    	
     }
 }

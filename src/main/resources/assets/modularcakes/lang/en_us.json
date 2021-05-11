@@ -1,5 +1,7 @@
 {
-	"item.modularcakes.flour": "Flour"
-	"item.modularcakes.salt": "Salt"
-	"item.modularcakes.vanilla": "Vanilla"
+	"item.modularcakes.flour": "Flour",
+	"item.modularcakes.salt": "Salt",
+	"item.modularcakes.butter": "Butter",
+  "item.modularcakes.vanilla": "Vanilla",
+	"itemGroup.modularcakestab": "Modular Cakes"
 }
