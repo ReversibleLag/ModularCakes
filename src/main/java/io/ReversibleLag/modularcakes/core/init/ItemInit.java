@@ -19,5 +19,5 @@ public class ItemInit {
 	
 	public static final RegistryObject<Item> BUTTER = ITEMS.register("butter", () -> new Item(new Item.Properties().tab(ModularCakes.MODULAR_CAKE_TAB)));
 	
-	public static final RegistryObject<Item> VANILLA = ITEMS.register("vanilla", () -> new Item(new Item.Properties().tab(ItemGroup.TAB_FOOD)));
+	public static final RegistryObject<Item> VANILLA = ITEMS.register("vanilla", () -> new Item(new Item.Properties().tab(ModularCakes.MODULAR_CAKE_TAB)));
 }
