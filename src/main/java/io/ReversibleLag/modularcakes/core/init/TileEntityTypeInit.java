@@ -16,5 +16,4 @@ public class TileEntityTypeInit {
 			"mixer_block",
 			() -> TileEntityType.Builder.create(MixerTileEntity::new, BlockInit.MIXER_BLOCK.get()).build(null));
 
-
 }

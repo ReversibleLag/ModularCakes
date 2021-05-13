@@ -8,8 +8,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit {
-	
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, 
+
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			ModularCakes.MOD_ID);
 
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour",
@@ -29,6 +29,7 @@ public class ItemInit {
 					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
 
 	public static final RegistryObject<BlockItem> MIXER_BLOCK = ITEMS.register("mixer_block",
-			() -> new BlockItem(BlockInit.MIXER_BLOCK.get(), new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
+			() -> new BlockItem(BlockInit.MIXER_BLOCK.get(),
+					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
 
 }

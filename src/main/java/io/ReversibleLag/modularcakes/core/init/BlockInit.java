@@ -19,7 +19,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> MIXER_BLOCK = BLOCKS.register("mixer_block", () -> new MixerBlock());
 
 	public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
-			() -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).hardnessAndResistance(5f)
-					.harvestTool(ToolType.PICKAXE).harvestLevel(2)));
+			() -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY)
+					.hardnessAndResistance(5f)
+					.harvestTool(ToolType.PICKAXE)
+					.harvestLevel(2)));
 
 }
