@@ -12,8 +12,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,15 +24,6 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-<<<<<<< Updated upstream
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import io.ReversibleLag.modularcakes.core.init.ItemInit;
-
-import java.util.stream.Collectors;
-=======
->>>>>>> Stashed changes
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("modularcakes")
@@ -50,7 +39,8 @@ public class ModularCakes
         bus.addListener(this::setup);
         
         ItemInit.ITEMS.register(bus);
-        
+        BlockInit.BLOCKS.register(bus);
+        TileEntityTypeInit.TILE_ENTITY_TYPE.register(bus);
     	
     	// Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);

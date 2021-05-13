@@ -1,9 +1,5 @@
 package io.ReversibleLag.modularcakes.core.init;
 
-<<<<<<< Updated upstream
-public class BlockInit {
-
-=======
 import io.ReversibleLag.modularcakes.ModularCakes;
 import io.ReversibleLag.modularcakes.common.block.MixerBlock;
 import net.minecraft.block.AbstractBlock;
@@ -25,5 +21,5 @@ public class BlockInit {
 	public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
 			() -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).hardnessAndResistance(5f)
 					.harvestTool(ToolType.PICKAXE).harvestLevel(2)));
->>>>>>> Stashed changes
+
 }
