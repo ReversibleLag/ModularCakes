@@ -1,9 +1,18 @@
 package io.ReversibleLag.modularcakes;
 
+import java.util.stream.Collectors;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import io.ReversibleLag.modularcakes.core.init.BlockInit;
+import io.ReversibleLag.modularcakes.core.init.ItemInit;
+import io.ReversibleLag.modularcakes.core.init.TileEntityTypeInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -17,12 +26,15 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+<<<<<<< Updated upstream
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import io.ReversibleLag.modularcakes.core.init.ItemInit;
 
 import java.util.stream.Collectors;
+=======
+>>>>>>> Stashed changes
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("modularcakes")
@@ -65,7 +77,7 @@ public class ModularCakes
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
+        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
@@ -107,15 +119,10 @@ public class ModularCakes
 		
 		
 		@Override
-		public ItemStack makeIcon() {
+		public ItemStack createIcon() {
 			return ItemInit.FLOUR.get().getDefaultInstance();
 		}
     	
-    	@Override
-    	public void fillItemList(NonNullList<ItemStack> p_78018_1_) {
-    		// TODO Auto-generated method stub
-    		super.fillItemList(p_78018_1_);
-    	}
     	
     }
 }
