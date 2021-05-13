@@ -3,5 +3,7 @@
 	"item.modularcakes.salt": "Salt",
 	"item.modularcakes.butter": "Butter",
   	"item.modularcakes.vanilla": "Vanilla",
+  	"block.modularcakes.mixer_block": "Mixer",
+  	"block.modularcakes.test_block": "Test Block",
 	"itemGroup.modularcakestab": "Modular Cakes"
 }

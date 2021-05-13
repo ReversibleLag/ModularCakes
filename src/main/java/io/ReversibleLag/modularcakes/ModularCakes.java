@@ -20,7 +20,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import io.ReversibleLag.modularcakes.core.init.BlockInit;
 import io.ReversibleLag.modularcakes.core.init.ItemInit;
+import io.ReversibleLag.modularcakes.core.init.TileEntityTypeInit;
 
 import java.util.stream.Collectors;
 
@@ -38,7 +40,8 @@ public class ModularCakes
         bus.addListener(this::setup);
         
         ItemInit.ITEMS.register(bus);
-        
+        BlockInit.BLOCKS.register(bus);
+        TileEntityTypeInit.TILE_ENTITY_TYPE.register(bus);
     	
     	// Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
