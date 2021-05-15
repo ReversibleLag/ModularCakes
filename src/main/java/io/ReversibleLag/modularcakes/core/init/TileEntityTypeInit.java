@@ -13,7 +13,7 @@ public class TileEntityTypeInit {
 			.create(ForgeRegistries.TILE_ENTITIES, ModularCakes.MOD_ID);
 
 	public static final RegistryObject<TileEntityType<MixerTileEntity>> MIXER_TILE_ENTITY = TILE_ENTITY_TYPE.register(
-			"mixer_block",
+			"mixer_entity",
 			() -> TileEntityType.Builder.create(MixerTileEntity::new, BlockInit.MIXER_BLOCK.get()).build(null));
 
 }

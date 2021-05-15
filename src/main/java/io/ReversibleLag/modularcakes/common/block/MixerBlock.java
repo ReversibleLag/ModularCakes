@@ -50,8 +50,7 @@ public class MixerBlock extends Block {
 
 
 	public MixerBlock() {
-		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).harvestLevel(1)
-				.hardnessAndResistance(3f, 0f).sound(SoundType.METAL));
+		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(3f,3f));
 
 		this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 	}
