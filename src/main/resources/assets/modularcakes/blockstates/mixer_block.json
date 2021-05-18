@@ -1,9 +1,9 @@
 {
 	"variants": {
-		"facing=north": { "model": "modularcakes:block/mixer_block", "y": 270},
-		"facing=south": { "model": "modularcakes:block/mixer_block", "y": 90 },
-		"facing=west": { "model": "modularcakes:block/mixer_block", "y": 180 },
-		"facing=east": { "model": "modularcakes:block/mixer_block" , "y": 0}
+		"facing=north": { "model": "modularcakes:block/mixer_block", "y": 0},
+		"facing=south": { "model": "modularcakes:block/mixer_block", "y": 180 },
+		"facing=west": { "model": "modularcakes:block/mixer_block", "y": 270 },
+		"facing=east": { "model": "modularcakes:block/mixer_block" , "y": 90}
 		
 	}
 
