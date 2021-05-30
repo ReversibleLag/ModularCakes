@@ -25,9 +25,9 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 
-public class MixerBlock extends Block {
+public class MixerBlockGreen extends Block {
 
-	public MixerBlock() {
+	public MixerBlockGreen() {
 		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(3f,3f));
 
 		this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
@@ -100,7 +100,7 @@ public class MixerBlock extends Block {
 	}
 
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-		return TileEntityTypeInit.MIXER_TILE_ENTITY_TYPE.get().create();
+		return TileEntityTypeInit.MIXER_TILE_ENTITY_TYPE_GREEN.get().create();
 
 	}
 

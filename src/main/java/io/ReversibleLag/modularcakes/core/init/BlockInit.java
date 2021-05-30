@@ -2,6 +2,7 @@ package io.ReversibleLag.modularcakes.core.init;
 
 import io.ReversibleLag.modularcakes.ModularCakes;
 import io.ReversibleLag.modularcakes.common.block.MixerBlock;
+import io.ReversibleLag.modularcakes.common.block.MixerBlockGreen;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -20,7 +21,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> MIXER_BLOCK = BLOCKS.register("mixer_block", () -> new MixerBlock());
 
 	
-	public static final RegistryObject<Block> MIXER_BLOCK_GREEN = BLOCKS.register("mixer_block_green", () -> new MixerBlock());
+	public static final RegistryObject<Block> MIXER_BLOCK_GREEN = BLOCKS.register("mixer_block_green", () -> new MixerBlockGreen());
 
 	public static final RegistryObject<Block> TEST_BLOCK = BLOCKS.register("test_block",
 			() -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY)

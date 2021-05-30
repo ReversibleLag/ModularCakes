@@ -6,15 +6,15 @@ import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 
-public class MixerTileEntity extends TileEntity implements ITickableTileEntity{
+public class MixerTileEntityGreen extends TileEntity implements ITickableTileEntity{
 
-	public MixerTileEntity(TileEntityType<?> tileEntityTpyeIn) {
+	public MixerTileEntityGreen(TileEntityType<?> tileEntityTpyeIn) {
 		super(tileEntityTpyeIn);
 		// TODO Auto-generated constructor stub
 	}
 	
-	public MixerTileEntity() {
-		this(TileEntityTypeInit.MIXER_TILE_ENTITY_TYPE.get());
+	public MixerTileEntityGreen() {
+		this(TileEntityTypeInit.MIXER_TILE_ENTITY_TYPE_GREEN.get());
 	}
 
 	@Override
