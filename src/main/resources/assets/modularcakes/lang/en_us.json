@@ -5,6 +5,7 @@
 	"item.modularcakes.butter": "Butter",
   	"item.modularcakes.vanilla": "Vanilla",
   	"block.modularcakes.mixer_block": "Purple Mixer",
+  	"block.modularcakes.mixer_block_green": "Green Mixer",
   	"block.modularcakes.test_block": "Test Block",
 	"block.modularcakes.vanilla_block": "Vanilla Ore"
 }

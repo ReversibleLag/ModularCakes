@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"facing=north": { "model": "modularcakes:block/mixer_block_green", "y": 0},
+		"facing=south": { "model": "modularcakes:block/mixer_block_green", "y": 180 },
+		"facing=west": { "model": "modularcakes:block/mixer_block_green", "y": 270 },
+		"facing=east": { "model": "modularcakes:block/mixer_block_green" , "y": 90}
+		
+	}
+
+} 

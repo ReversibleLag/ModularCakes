@@ -2,8 +2,6 @@ package io.ReversibleLag.modularcakes.common.block;
 
 import java.util.stream.Stream;
 
-import javax.swing.Icon;
-
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -25,10 +23,16 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
-import net.minecraftforge.event.RegistryEvent.Register;
 
 public class MixerBlock extends Block {
 
+	public MixerBlock() {
+		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(3f,3f));
+
+		this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+	}
+	
+	
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 
 	private static final VoxelShape SHAPE_E = Stream.of(Block.makeCuboidShape(13, 0, 5, 16, 9, 11),
@@ -51,12 +55,6 @@ public class MixerBlock extends Block {
 				return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);
 			}).get();
 
-
-	public MixerBlock() {
-		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).sound(SoundType.METAL).hardnessAndResistance(3f,3f));
-
-		this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-	}
 	
 	
 
