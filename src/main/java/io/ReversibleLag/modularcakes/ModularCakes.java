@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import io.ReversibleLag.modularcakes.core.init.BlockInit;
+import io.ReversibleLag.modularcakes.core.init.FeatureInit;
 import io.ReversibleLag.modularcakes.core.init.ItemInit;
 import io.ReversibleLag.modularcakes.core.init.TileEntityTypeInit;
 import net.minecraft.block.Block;
@@ -16,6 +17,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
@@ -55,7 +57,8 @@ public class ModularCakes {
 
 		// Register ourselves for server and other game events we are interested in
 		MinecraftForge.EVENT_BUS.register(this);
-
+		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
+		
 	}
 
 	@SubscribeEvent

@@ -2,8 +2,11 @@ package io.ReversibleLag.modularcakes.core.init;
 
 import io.ReversibleLag.modularcakes.ModularCakes;
 import io.ReversibleLag.modularcakes.common.block.MixerBlock;
+import io.ReversibleLag.modularcakes.common.block.VanillaBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.common.ToolType;
@@ -23,5 +26,12 @@ public class BlockInit {
 					.hardnessAndResistance(5f)
 					.harvestTool(ToolType.PICKAXE)
 					.harvestLevel(2)));
-
+	
+	public static final RegistryObject<Block> VANILLA_BLOCK = BLOCKS
+			.register("vanilla_block", 
+					() -> new Block(AbstractBlock.Properties.from(Blocks.BIRCH_LEAVES)));
+	
+	
+	//public static final RegistryObject<LeavesBlock> VANILLA_BLOCK = BLOCKS.register("vanilla_block", () -> new VanillaBlock());
+	
 }

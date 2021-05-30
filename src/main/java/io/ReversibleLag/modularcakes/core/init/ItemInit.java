@@ -32,5 +32,9 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> MIXER_BLOCK = ITEMS.register("mixer_block",
 			() -> new BlockItem(BlockInit.MIXER_BLOCK.get(),
 					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
+	
+	public static final RegistryObject<BlockItem> VANILLA_BLOCK = ITEMS.register("vanilla_block",
+			() -> new BlockItem(BlockInit.VANILLA_BLOCK.get(),
+					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
 
 }

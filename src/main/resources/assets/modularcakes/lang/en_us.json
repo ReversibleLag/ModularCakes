@@ -1,9 +1,10 @@
 {
+	"itemGroup.modularcakestab": "Modular Cakes",
 	"item.modularcakes.flour": "Flour",
 	"item.modularcakes.salt": "Salt",
 	"item.modularcakes.butter": "Butter",
   	"item.modularcakes.vanilla": "Vanilla",
   	"block.modularcakes.mixer_block": "Purple Mixer",
   	"block.modularcakes.test_block": "Test Block",
-	"itemGroup.modularcakestab": "Modular Cakes"
+	"block.modularcakes.vanilla_block": "Vanilla Ore"
 }
