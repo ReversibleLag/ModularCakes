@@ -32,14 +32,9 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> MIXER_BLOCK = ITEMS.register("mixer_block",
 			() -> new BlockItem(BlockInit.MIXER_BLOCK.get(),
 					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
-	
-	public static final RegistryObject<BlockItem> MIXER_BLOCK_GREEN = ITEMS.register("mixer_block_green",
-			() -> new BlockItem(BlockInit.MIXER_BLOCK_GREEN.get(),
-					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
-	
-	
-	public static final RegistryObject<BlockItem> VANILLA_BLOCK = ITEMS.register("vanilla_block",
-			() -> new BlockItem(BlockInit.VANILLA_BLOCK.get(),
+
+	public static final RegistryObject<BlockItem> CHURNER_BLOCK = ITEMS.register("churner_block",
+			() -> new BlockItem(BlockInit.CHURNER_BLOCK.get(),
 					new Item.Properties().group(ModularCakes.MODULAR_CAKE_TAB)));
 
 }
